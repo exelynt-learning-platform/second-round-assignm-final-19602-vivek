@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: ecommerce-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef}
+    expiration-ms: 86400000
+
+stripe:
+  # Secret key: server-side Stripe API (Checkout Session). Never expose in client apps.
+  secret-key:${STRIPE_SECRET_KEY}
+  # Publishable key: use in a browser/mobile app with Stripe.js if you add a frontend later.
+  publishable-key: pk_test_51TG1T1DJrJXcAGZyFly8bzPk3PrVOnC14EiFpIQIGfLg52Bfhjv8j1bhbTaxBm6kVw19rijvo4xs53E1xMNW0n2H008yuClMBR
+  # Webhook signing secret: run `stripe listen --forward-to localhost:8080/payments/webhook` and paste whsec_... here, or set STRIPE_WEBHOOK_SECRET.
+  webhook-secret: ${STRIPE_WEBHOOK_SECRET:whsec_your_webhook_signing_secret}
+  success-url: ${STRIPE_SUCCESS_URL:http://localhost:8080/payments/success}
+  cancel-url: ${STRIPE_CANCEL_URL:http://localhost:8080/payments/cancel}
+
+logging:
+  level:
+    com.ecommerce: INFO
+    org.springframework.security: INFO
