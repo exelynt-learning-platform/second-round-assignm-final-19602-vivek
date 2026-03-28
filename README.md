@@ -119,6 +119,24 @@ Set header: Authorization: Bearer <token>.
 Then call cart → add → orders/create → payments/create-session → open checkout URL.
 
 
-postman api tests 
+api's tested with postman 
 
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b3221f41-e985-4213-9b6f-eaaf7aae4690" />
+
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/fe363fb4-8daa-43d5-b1c9-1f1ee78498e2" />
+
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/d513ab5c-6aa6-4e47-aea8-7a123745d0c6" />
+
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/8f6810ba-cd3d-4a6e-9ac3-598deb1ac228" />
+
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/aecd8403-634c-4669-a878-95e8bb312411" />
+
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/5b38d013-dd2c-4203-8db2-f834669ed52b" />
+
+MySql Database 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/016a6383-dce0-43a8-b61d-c1aa2ca0c047" />
+
+
+
+
