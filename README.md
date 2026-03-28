@@ -118,8 +118,10 @@ POST /auth/register or /auth/login → copy token.
 Set header: Authorization: Bearer <token>.
 Then call cart → add → orders/create → payments/create-session → open checkout URL.
 
+stripe payment gateway is integrated. and tested
 
-api's tested with postman 
+
+api's tested with postman - all apis. works fine
 
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b3221f41-e985-4213-9b6f-eaaf7aae4690" />
 
